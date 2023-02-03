@@ -1,0 +1,201 @@
+/*Definições Padrões*/
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    list-style: none; 
+    border: none; 
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;    
+}
+
+html{
+    width: 100vw;
+    height: 80vh;
+    font-size: 62.5%;
+}
+
+.conteudo-header{
+    width: 100vW;
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(189, 64, 6, 1.0);
+    position: fixed; /*Fixando a barra de navegação*/
+    padding-left: 1rem;
+    
+}
+
+/* Definindo barra de navegção*/
+.conteudo-header .lista-menu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.conteudo-header .lista-menu li a{
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 300ms ease-in;
+}
+
+/*Criando um efeito para quando passar o mouse por cima*/
+.conteudo-header .lista-menu li a:hover{
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color:#ffc506;
+}
+
+
+
+/*Definindo a Primeira Seção*/
+.primeira-secao{
+    background-color: darksalmon;
+    height: 100vh;
+    width: 100vw ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeira-secao .conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.primeira-secao h1{
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.primeira-secao h2{
+    color:black;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-principal-imagem{
+    height: 120px;
+   justify-content: center;
+}
+
+
+/* Definindo a Segunda Seção - Apresentação das Receitas*/
+
+.segunda-secao{
+    background-color: darksalmon;
+    height: 100vh;
+    width: 100vw ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Criando catalogo com cards*/
+  section .catalogo {
+    width: 100vw;
+    padding: 100px;
+}
+
+
+/*Desta maneira consigo colocar em colunas.  quando defino Display: grid - a configuração de grid-template-columns define esta distribuição - a largura minmax é quem define a quantidade de itens de largura*/
+section .card-wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    padding-top: 05px; 
+    grid-gap: 35px;
+}
+
+/* configurando os cards e os itens dos cards*/
+section .card-item {
+    height: 80vh;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+/*Estilizando o conteudos cards / Centralizei tudo o que há de conteúdo do card*/
+.card-content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Definindo os Títulos das Receitas - Nome do Prato*/
+.card-item h3 {
+    display: flex;
+    width: 90%;
+    height: 10px;
+    color: black;
+    font-size: medium;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilizando a imagem dentro do card -  vamos diminuir*/
+.card-item img  {
+    width: 90%;
+    height: 250px;
+    margin-top: 10px;
+}
+
+/*Definindo os itens da Receita*/
+.card-item li {
+    width: 100%;
+    font-size: medium;
+    list-style: circle;
+}
+
+/*Definindo os paragrafos - Modo de Preparo*/
+.card-item p {
+    width: 90%;
+    height: 100px;
+    color: black;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+
+/* Definindo a Terceira Seçao - Cadastro*/
+
+.terceira-secao{
+    background-color: darksalmon;
+    height: 80vh;
+    width: 100% ;
+    padding-top: 100px;
+    padding-left: 90px;
+}
+
+/*Definindo o Rodapé*/
+footer{
+    width: 100vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(189, 64, 6, 1.0);
+    color: white;
+    
+}
+
+
